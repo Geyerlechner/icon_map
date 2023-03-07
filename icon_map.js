@@ -53,8 +53,8 @@ function visitRawLineData(file, visitLine, onFinished) {
 }
 
 function createQML(filename, unicode, notFound) {
-    var prefix = ', { "' + filename.replaceAll(".png", "") + ' ", "\\u';
-    var postfix = '" }';
+    var prefix = ', {"' + filename.replaceAll(".png", "") + ' ", "\\u';
+    var postfix = '"}';
     var value = '';
     if (unicode === "")
         value = notFound;
